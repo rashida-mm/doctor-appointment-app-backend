@@ -6,7 +6,7 @@ function Banner() {
     <div className='container border border-primary my-4 rounded' style={{backgroundColor:'#FCFCFE'}}>
         <Row>
             <Col>
-            <img style={{height:'340px',marginLeft:'50px'}} src="https://cdnl.iconscout.com/lottie/premium/thumb/male-patient-medical-record-5685903-4745614.gif" alt="" />
+            <img style={{height:'340px'}} src="https://cdnl.iconscout.com/lottie/premium/thumb/male-patient-medical-record-5685903-4745614.gif" alt="" />
             </Col>
             <Col className='m-5 text-center'>
             <h1>Welcome to Med Expert 24/7</h1>

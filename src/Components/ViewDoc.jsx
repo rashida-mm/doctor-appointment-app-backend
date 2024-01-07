@@ -37,7 +37,7 @@ function ViewDoc() {
         </Col>
         <Col>
         <div>
-        <MDBListGroup style={{ minWidth: '22rem',opacity:'0.95' }} light>
+        <MDBListGroup style={{opacity:'0.95' }} light>
       <MDBListGroupItem
         tag='button'
         action
