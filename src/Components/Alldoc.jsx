@@ -6,7 +6,7 @@ import DocCard from './DocCard'
 
 function Alldoc() {
 
-  const  base_url = 'http://localhost:4000/doctors'
+  const  base_url = 'https://doctor-app-backend-rashida.onrender.com/doctors'
 
   //to hold array of data
   const[AllDoc,setAlldoc] = useState([])

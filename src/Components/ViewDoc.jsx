@@ -16,7 +16,7 @@ function ViewDoc() {
   const {id} = useParams() 
   console.log(id); //object->id
   //api call
-  const  base_url = 'http://localhost:4000/doctors'
+  const  base_url = 'https://doctor-app-backend-rashida.onrender.com/doctors'
 
   const fetchDoc = async()=>{
     const result = await axios.get(`${base_url}/${id}`)//to get the details of particular id
@@ -50,19 +50,19 @@ function ViewDoc() {
         <h2 className='text-white'>{docDetails.hospital}</h2>
       </MDBListGroupItem>
       <MDBListGroupItem tag='button' action type='button' className='px-3'>
-      {docDetails.address}
+      <i class="fa-solid fa-location-dot"></i> : {docDetails.address}
       </MDBListGroupItem>
       <MDBListGroupItem tag='button' action type='button' className='px-3'>
-      {docDetails.phone}
+      <i class="fa-solid fa-phone"></i> : {docDetails.phone}
       </MDBListGroupItem>
       <MDBListGroupItem tag='button' action type='button' className='px-3'>
-      {docDetails.email}
+      <i class="fa-solid fa-envelope"></i> : {docDetails.email}
       </MDBListGroupItem>
       <MDBListGroupItem tag='button' action type='button' className='px-3'>
-      Timing : {docDetails.available_hours}
+      <i class="fa-solid fa-clock"></i> Timing : {docDetails.available_hours}
       </MDBListGroupItem>
       <MDBListGroupItem tag='button' action type='button' className='px-3'>
-      Available Days: {docDetails.available_days?.join(' | ')}
+      <i class="fa-solid fa-calendar-days"></i> Available Days: {docDetails.available_days?.join(' | ')}
     </MDBListGroupItem>
       <MDBListGroupItem>
         <DocRev rev = {docDetails.reviews}/>      
