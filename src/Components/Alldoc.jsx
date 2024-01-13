@@ -22,17 +22,18 @@ function Alldoc() {
   },[])
 
   return (
-    <div>
-      <Row className='mt-4' style={{backgroundColor:'skyblue'}}>
-        {
-          AllDoc.map(item=>(
-            <Col sm={12} md={6} lg={4} xl={3}>
-            <DocCard doctor = {item}/>
-            </Col>
-          ))
-        }
+    <div style={{backgroundColor:'#F7FAFF'}}>
+            <h2 className='text-center text-dark py-5'>Meet Our Best Doctors</h2>
+            <Row className='mt-4 justify-content-center w-100'>
+  {
+    AllDoc.map(item=>(
+      <Col sm={12} md={6} lg={4} xl={3} key={item.id}>
+        <DocCard doctor={item}/>
+      </Col>
+    ))
+  }
+</Row>
 
-      </Row>
     </div>
   )
 }
